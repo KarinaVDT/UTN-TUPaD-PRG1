@@ -1,0 +1,110 @@
+# 1 Agregar frutas al diccionario
+precios_frutas = {"Banana": 1200, "Ananá": 2500, "Melón": 3000, "Uva": 1450}
+
+precios_frutas["Naranja"] = 1200
+precios_frutas["Manzana"] = 1500
+precios_frutas["Pera"] = 2300
+
+
+# 2 Actualizar precios existentes
+precios_frutas["Banana"] = 1330
+precios_frutas["Manzana"] = 1700
+precios_frutas["Melón"] = 2800
+
+
+# 3 Lista solo con las frutas (claves)
+solo_frutas = list(precios_frutas)
+
+
+#4 Agenda telefónica (5 contactos) y consulta
+agenda = {}
+
+for _ in range(5):
+    nombre = input("Nombre: ")
+    numero = input("Número: ")
+    agenda[nombre] = numero
+
+buscar = input("Consultar nombre: ")
+numero = agenda.get(buscar)
+if numero is not None:
+    print(numero)
+else:
+    print("No existe ese contacto")
+
+
+#5 Palabras únicas y conteo
+frase = input("Frase: ").lower()
+palabras = frase.split()
+
+palabras_unicas = set(palabras)
+
+recuento = {}
+for p in palabras:
+    recuento[p] = recuento.get(p, 0) + 1
+
+print("Palabras_únicas:", palabras_unicas)
+print("Recuento:", recuento)
+
+
+#6 Notas con tuplas y promedio
+alumnos = {}
+
+for _ in range(3):
+    nombre = input("Alumno: ")
+    n1 = float(input("Nota 1: "))
+    n2 = float(input("Nota 2: "))
+    n3 = float(input("Nota 3: "))
+    alumnos[nombre] = (n1, n2, n3)
+
+for nombre, notas in alumnos.items():
+    promedio = sum(notas) / len(notas)
+    print(nombre, "→", promedio)
+
+#7) Operaciones con sets
+p1 = set(input("Aprobados P1 (separados por espacio): ").split())
+p2 = set(input("Aprobados P2 (separados por espacio): ").split())
+
+ambos      = p1.intersection(p2)
+solo_uno   = p1.symmetric_difference(p2)
+al_menos_1 = p1.union(p2)
+
+print("Ambos:", ambos)
+print("Solo uno:", solo_uno)
+print("Al menos uno:", al_menos_1)
+
+#8 Stock de productos
+stock = {}
+
+producto = input("Producto a consultar: ")
+if producto in stock:
+    print("Stock actual:", stock[producto])
+    agregar = int(input("¿Cuántas unidades sumar?: "))
+    stock[producto] += agregar
+else:
+    print("No existe, se crea.")
+    unidades = int(input("Unidades iniciales: "))
+    stock[producto] = unidades
+
+print(stock)
+
+#9 Agenda con clave tupla
+agenda = {("Lunes", "09:00"): "Reunión", ("Martes", "14:00"): "Clase"}
+
+dia  = input("Día: ")
+hora = input("Hora (HH:MM): ")
+
+clave = (dia, hora)
+if clave in agenda:
+    print("Evento:", agenda[clave])
+else:
+    print("Libre")
+
+
+#10 Invertir país→capital a capital→país
+paises = {"Argentina": "Buenos Aires", "Francia": "París", "Japón": "Tokio"}
+
+invertido = {}
+for pais, capital in paises.items():
+    invertido[capital] = pais
+
+print(invertido)
