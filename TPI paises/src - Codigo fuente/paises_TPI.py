@@ -10,7 +10,7 @@ Integrantes: Karina Vanesa D'Angelo y Jael Vocos
 import csv
 import os
 
-NOMBRE_CSV = "paises.csv"  # archivo base esperado en el mismo directorio
+NOMBRE_CSV = "paises.csv"  # archivo base 
 
 def normalizar_texto(t):
     """
