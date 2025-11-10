@@ -403,4 +403,5 @@ def menu():
         else:
             print("Opción inválida. Intente nuevamente.")
 
-menu()
+if __name__ == "__main__":
+    menu()
