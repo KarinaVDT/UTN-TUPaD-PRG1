@@ -383,7 +383,6 @@ def menu():
 
         opcion = input("Elija una opcion: ").strip()
 
-        # Estructura de control clara (sin lambdas)
         if opcion == "1":
             agregar_pais(paises, NOMBRE_CSV)
         elif opcion == "2":
@@ -404,5 +403,4 @@ def menu():
         else:
             print("Opción inválida. Intente nuevamente.")
 
-if __name__ == "__main__":
-    menu()
+menu()
