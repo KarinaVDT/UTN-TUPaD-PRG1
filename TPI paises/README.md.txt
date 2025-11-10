@@ -1,10 +1,8 @@
 Gestión de Países en Python
 
 Descripción
-Este proyecto forma parte del **Trabajo Práctico Integrador (TPI)** de la materia **Programación I** de la **Tecnicatura Universitaria en Programación (UTN)**.  
-La aplicación permite **gestionar información sobre países**, aplicando estructuras secuenciales, condicionales y repetitivas, además de conceptos de modularización, funciones, listas, diccionarios y manejo de archivos CSV.
-
----
+Este proyecto forma parte del Trabajo Práctico Integrador (TPI) de la materia Programación I de la Tecnicatura Universitaria en Programación (UTN).  
+La aplicación permite gestionar información sobre países, aplicando estructuras secuenciales, condicionales y repetitivas, además de conceptos de modularización, funciones, listas, diccionarios y manejo de archivos CSV.
 
 Objetivos
 - Aplicar los contenidos teóricos de la materia en un proyecto integrador.
@@ -12,11 +10,8 @@ Objetivos
 - Implementar búsquedas, filtros, ordenamientos y estadísticas utilizando estructuras de datos adecuadas.
 - Practicar el trabajo colaborativo y el uso de GitHub como repositorio de código.
 
----
-
 Estructura del proyecto
 
-```
 tpi-paises/
 ├─ src/
 │  └─ paises.py          Código fuente principal
@@ -26,9 +21,7 @@ tpi-paises/
 │  ├─ informe.pdf        Informe final en formato APA
 │  └─ capturas/          Evidencias y capturas de ejecución
 └─ README.md             Archivo de documentación del proyecto
-```
 
----
 
 Requisitos y ejecución
 
@@ -40,37 +33,30 @@ Ejecución:
 1. Clonar o descargar el repositorio.  
 2. Abrir el proyecto en VS Code.  
 3. Ejecutar el archivo principal desde la terminal:
-   ```bash
    python src/paises.py
-   ```
 4. Seguir las opciones del menú para mostrar, buscar, filtrar, ordenar, calcular estadísticas o agregar países.
 
----
 Ejemplos de uso
 
 Buscar país (búsqueda parcial):
-```
-Término: ar
 Resultado:
-- Argentina | Pob: 46000000 | Sup: 2780400 km² | América del Sur
-```
+- Argentina | Pob: 52000000 | Sup: 69000 km2| América del Sur
+
 
 Filtro por rango de población:
-```
 Mínimo: 40000000
 Máximo: 100000000
 Resultado:
 - Argentina
-- Alemania
-```
+
 
 Estadísticas:
-```
+
 País con mayor población: Brasil
 País con menor población: Argentina
 Promedio de población: 115000000
-Promedio de superficie: 2600000 km²
-```
+Promedio de superficie: 2600000 km2
+
  Funcionalidades principales
 - Carga de datos desde archivo CSV.  
 - Búsqueda exacta y parcial por nombre.  
@@ -80,13 +66,12 @@ Promedio de superficie: 2600000 km²
 - Agregado y actualización de países con validaciones.  
 - Menú principal de navegación por consola.
 
----
+--
 
 Integrantes
 - Karina Vanesa D’Angelo
 - Jael Vocos
 
----
 
 Docente y cátedra
 Materia: Programación I  
@@ -96,7 +81,7 @@ Docente Comisión 4: Ana Mutti
 Docente Comisión 12: Franco Gonzalez
 Año: 2025 – 2º Cuatrimestre  
 
----
+
 
 Enlaces
 - [Informe completo en formato PDF](./docs/informe.pdf)
